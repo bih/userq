@@ -14,3 +14,15 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+
+# Ignore dummy Rails-related stuff
+/test/dummy/db/*.sqlite3
+/test/dummy/db/*.sqlite3-journal
+/test/dummy/.bundle
+/test/dummy/log/*.log
+/test/dummy/tmp
+
+# Ignore migrations on dummy
+/test/dummy/db/migrate/*
+

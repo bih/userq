@@ -402,3 +402,13 @@ SQLite3::SQLException: near ")": syntax error: SELECT COUNT(*) FROM "user_queues
   [1m[35mUserQ::UserQueue Load (0.2ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2' ORDER BY "user_queues"."id" ASC LIMIT 1
   [1m[36mUserQ::UserQueue Load (2.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues"[0m
   [1m[35mUserQ::UserQueue Load (0.3ms)[0m  SELECT "user_queues".* FROM "user_queues"
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUserQueues (1387763867)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  DROP TABLE "user_queues"
+  [1m[36mSQL (19.5ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '1387763867'[0m
+  [1m[35m (19.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
