@@ -5,7 +5,7 @@ UserQ allows you to **very quickly** integrate awesome user-based queues into yo
 ![Screenshot](http://i.imgur.com/uqYjMyF.gif)
 
 ### Example code
-```
+```ruby
 queue = UserQ::Queue.new(capacity: 50)
 
 ## Can we enter the queue?
@@ -44,7 +44,7 @@ You're all setup!
 
 
 ### UserQ Documentation
-See the [full documentation on the Wiki](#) to see what you can do with UserQ.
+See the [full documentation on the Wiki](/studenthack/userq/wiki/Documentation) to see what you can do with UserQ.
 
 
 ### Uninstall UserQ
@@ -65,7 +65,7 @@ $ git clone https://github.com/studenthack/userq.git
 
 Do some awesome stuff. To test simply run
 ```
-rake test
+$ rake test
 ```
 
 We love pull requests! Make sure you write a test for your contribution.
@@ -76,7 +76,7 @@ We love pull requests! Make sure you write a test for your contribution.
 - Assign queue places in a chronological order (first into queue = first entry) instead of randomly
 
 ### Release History
-- 23/12/13: First version
+- 23/12/13: The initial version
 
 ### LICENCE
 Permission is hereby granted, free of charge, to any person obtaining
