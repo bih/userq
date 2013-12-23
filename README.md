@@ -50,29 +50,6 @@ You're all setup!
 See the [full documentation on the Wiki](https://github.com/studenthack/userq/wiki/Documentation) to see what you can do with UserQ.
 
 
-### Uninstall UserQ
-```
-Revoke the UserQ migration:
-$ rake db:rollback
-
-Remove everything UserQ:
-$ rails destroy userq:install
-```
-
-
-### Development
-Directly clone the repository (or fork it and clone your fork):
-```
-$ git clone https://github.com/studenthack/userq.git
-```
-
-Do some awesome stuff. To test simply run
-```
-$ rake test
-```
-
-We love pull requests! Make sure you write a test for your contribution.
-
 ### Roadmap
 - Lots of more awesome looking tests
 - Develop the UserQ Wiki
