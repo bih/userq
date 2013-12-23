@@ -23,7 +23,7 @@ puts entry.expires # => 175
 ```
 
 ### How does it work?
-The capacity you want to distribute (i.e. how many available tickets are left) and then UserQ does its magic (and heavy lifting). Some questions you can ask UserQ:
+Tell it how much you capacity you have (i.e. how many available tickets are left) and then UserQ does its beautiful magic. Some of the questions you can ask UserQ:
 
 * How many "people" are in the queue?
 * When does the current users spot in the queue expire?
