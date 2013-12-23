@@ -5,7 +5,6 @@ rvm:
   - jruby-19mode
 
 gemfile:
-  - Gemfile
   - test/Gemfile.test
 
 services:
@@ -14,6 +13,9 @@ services:
 env:
   - RAILS_ENV=test
 
-script:
+before_script:
+  - cd test/dummy
   - rails generate userq:install
+
+script:
   - rake test
