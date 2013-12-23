@@ -11,10 +11,9 @@ queue = UserQ::Queue.new(capacity: 50)
 ## Can we enter the queue?
 if queue.enter_into_queue?
 	entry = queue.enter
-	# entry.code is the ID of the user
 	# They have a place in the queue. Sell them a ticket!
 else
-	# No place in queue. Run this block again after 5 seconds.
+	# No place in queue. Run this block again after n seconds.
 end
 
 # Default expiry: 180 seconds
