@@ -1,0 +1,404 @@
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUserQueues (1387736448)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "user_queue" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "code" varchar(255), "expires_at" datetime, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "1387736448"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUserQueues (1387736497)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "user_queue" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "code" varchar(255), "expires_at" datetime, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+SQLite3::SQLException: table "user_queue" already exists: CREATE TABLE "user_queue" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "code" varchar(255), "expires_at" datetime, "data" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUserQueues (1387736553)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "user_queue" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "code" varchar(255), "expires_at" datetime, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+SQLite3::SQLException: table "user_queue" already exists: CREATE TABLE "user_queue" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "code" varchar(255), "expires_at" datetime, "data" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUserQueues (1387762058)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "user_queue" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "code" varchar(255), "expires_at" datetime, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+SQLite3::SQLException: table "user_queue" already exists: CREATE TABLE "user_queue" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "code" varchar(255), "expires_at" datetime, "data" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUserQueues (1387762245)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "user_queue" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "code" varchar(255), "expires_at" datetime, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (39.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "1387762245"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mUserQ::UserQueue Load (0.5ms)[0m  [1mSELECT "user_queues".* FROM "user_queues"[0m
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUserQueues (1387762245)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  DROP TABLE "user_queue"
+  [1m[36mSQL (1.3ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '1387762245'[0m
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUserQueues (1387762350)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "user_queues" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "code" varchar(255), "expires_at" datetime, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "1387762350"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (60.5ms)[0m  INSERT INTO "user_queues" ("code", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["code", "abc"], ["created_at", Mon, 23 Dec 2013 01:33:16 UTC +00:00], ["data", {:hi=>1}], ["expires_at", Mon, 23 Dec 2013 01:33:01 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 01:33:16 UTC +00:00]]
+TypeError: can't cast Hash to text: INSERT INTO "user_queues" ("code", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "user_queues" ("code", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["code", "abc"], ["created_at", Mon, 23 Dec 2013 01:33:16 UTC +00:00], ["data", "{\"hi\":1}"], ["expires_at", Mon, 23 Dec 2013 01:33:01 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 01:33:16 UTC +00:00]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36mUserQ::UserQueue Load (0.3ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" ORDER BY "user_queues"."id" ASC LIMIT 1[0m
+  [1m[35mUserQ::UserQueue Load (0.2ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE (expires_at > '2013-12-23 01:54:50.497565')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUserQueues (1387762350)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  DROP TABLE "user_queues"
+  [1m[36mSQL (1.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '1387762350'[0m
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUserQueues (1387763867)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "user_queues" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "code" varchar(255), "expires_at" datetime, "data" text, "context" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "1387763867"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at >)[0m
+SQLite3::SQLException: near ")": syntax error: SELECT COUNT(*) FROM "user_queues"  WHERE "user_queues"."context" = 'tickets' AND (expires_at >)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:34:25.534011')[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:34:57.881042')
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["code", "4qvca7p0cb5jnxv9ou78eqer"], ["context", "tickets"], ["created_at", Mon, 23 Dec 2013 02:34:57 UTC +00:00], ["data", "{}"], ["expires_at", Mon, 23 Dec 2013 02:37:57 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 02:34:57 UTC +00:00]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:38:23.615266')[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:38:26.297658')
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["code", "nryf7zh3hw77en8cdabpxzfs"], ["context", "tickets"], ["created_at", Mon, 23 Dec 2013 02:38:26 UTC +00:00], ["data", "{}"], ["expires_at", Mon, 23 Dec 2013 02:41:26 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 02:38:26 UTC +00:00]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'nryf7zh3hw77en8cdabpxzfs'
+  [1m[36mUserQ::UserQueue Load (0.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'nryf7zh3hw77en8cdabpxzfs'[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:38:32.809706')
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["code", "t1cj6xe76i75y1w8a28s0syq"], ["context", "tickets"], ["created_at", Mon, 23 Dec 2013 02:38:32 UTC +00:00], ["data", "{}"], ["expires_at", Mon, 23 Dec 2013 02:41:32 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 02:38:32 UTC +00:00]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 't1cj6xe76i75y1w8a28s0syq'
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 't1cj6xe76i75y1w8a28s0syq'[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:39:54.747160')[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36mUserQ::UserQueue Load (0.5ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1[0m
+  [1m[35mUserQ::UserQueue Load (0.6ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36mUserQ::UserQueue Load (0.4ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1[0m
+  [1m[36mUserQ::UserQueue Load (0.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1[0m
+  [1m[35mUserQ::UserQueue Load (0.5ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36mUserQ::UserQueue Load (0.3ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1[0m
+  [1m[35mUserQ::UserQueue Load (0.5ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36mUserQ::UserQueue Load (0.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:41:34.492178')[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:41:44.107669')
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["code", "8gpokdr1dmd0ptwz1uzcow1r"], ["context", "tickets"], ["created_at", Mon, 23 Dec 2013 02:41:44 UTC +00:00], ["data", "{}"], ["expires_at", Mon, 23 Dec 2013 02:44:44 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 02:41:44 UTC +00:00]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = '8gpokdr1dmd0ptwz1uzcow1r'
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = '8gpokdr1dmd0ptwz1uzcow1r' ORDER BY "user_queues"."id" ASC LIMIT 1[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = '8gpokdr1dmd0ptwz1uzcow1r'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:43:17.021301')[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:43:19.368785')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:44:13.229205')[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:44:18.168214')
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["code", "95yippks23jwnjf5ixe33cpc"], ["context", "tickets"], ["created_at", Mon, 23 Dec 2013 02:44:18 UTC +00:00], ["data", "{}"], ["expires_at", Mon, 23 Dec 2013 02:47:18 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 02:44:18 UTC +00:00]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mUserQ::UserQueue Load (0.3ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at <= '2013-12-23 02:44:18.208924')
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "user_queues" WHERE "user_queues"."id" = ?  [["id", 1]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "user_queues" WHERE "user_queues"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "user_queues" WHERE "user_queues"."id" = ?  [["id", 3]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = '95yippks23jwnjf5ixe33cpc'
+  [1m[36mUserQ::UserQueue Load (0.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = '95yippks23jwnjf5ixe33cpc' ORDER BY "user_queues"."id" ASC LIMIT 1[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = '95yippks23jwnjf5ixe33cpc'
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:44:47.934819')[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["code", "h00hodhtm366gmjxljr3x93n"], ["context", "tickets"], ["created_at", Mon, 23 Dec 2013 02:44:47 UTC +00:00], ["data", "{}"], ["expires_at", Mon, 23 Dec 2013 02:47:47 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 02:44:47 UTC +00:00]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36mUserQ::UserQueue Load (0.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at <= '2013-12-23 02:44:47.942621')[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "user_queues" WHERE "user_queues"."id" = ?[0m  [["id", 4]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'h00hodhtm366gmjxljr3x93n'[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'h00hodhtm366gmjxljr3x93n' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'h00hodhtm366gmjxljr3x93n'[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:44:53.191155')
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:44:55.406922')[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:44:56.902150')
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:44:58.183047')[0m
+  [1m[35mUserQ::UserQueue Load (0.3ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36mUserQ::UserQueue Load (0.4ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36mUserQ::UserQueue Load (0.5ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1[0m
+  [1m[35mUserQ::UserQueue Load (0.5ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:45:24.511315')[0m
+  [1m[35mUserQ::UserQueue Load (0.6ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:45:25.593002')[0m
+  [1m[35mUserQ::UserQueue Load (0.3ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:45:26.343269')[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:54:45.077888')[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:07.222034')[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:09.963408')
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (17.1ms)[0m  INSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["code", "r0s17vp28vk3ljo0d85dziah"], ["context", "tickets"], ["created_at", Mon, 23 Dec 2013 02:55:09 UTC +00:00], ["data", "{}"], ["expires_at", Mon, 23 Dec 2013 02:55:19 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 02:55:09 UTC +00:00]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mUserQ::UserQueue Load (0.2ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at <= '2013-12-23 02:55:09.986483')
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "user_queues" WHERE "user_queues"."id" = ?  [["id", 5]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "user_queues" WHERE "user_queues"."id" = ?[0m  [["id", 6]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'r0s17vp28vk3ljo0d85dziah'[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'r0s17vp28vk3ljo0d85dziah' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'r0s17vp28vk3ljo0d85dziah'[0m
+  [1m[35mUserQ::UserQueue Load (0.3ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:11.052386')[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:11.854440')[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:12.470590')[0m
+  [1m[35mUserQ::UserQueue Load (0.5ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:13.142392')[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:13.815057')[0m
+  [1m[35mUserQ::UserQueue Load (0.5ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:14.494003')[0m
+  [1m[35mUserQ::UserQueue Load (0.7ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:15.191311')[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:15.799003')[0m
+  [1m[35mUserQ::UserQueue Load (0.5ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:16.429080')[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:17.070641')[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:17.646863')[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:18.213378')[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:18.806718')[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:19.428689')[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:20.078269')[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:20.862564')[0m
+  [1m[35mUserQ::UserQueue Load (0.5ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:21.662333')[0m
+  [1m[35mUserQ::UserQueue Load (0.5ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:22.574720')[0m
+  [1m[35mUserQ::UserQueue Load (0.5ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:23.284887')[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:28.454046')[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:30.875339')
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["code", "g7vizn337bjm5gzax5iu5a2k"], ["context", "tickets"], ["created_at", Mon, 23 Dec 2013 02:55:30 UTC +00:00], ["data", "{}"], ["expires_at", Mon, 23 Dec 2013 02:55:40 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 02:55:30 UTC +00:00]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mUserQ::UserQueue Load (0.3ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at <= '2013-12-23 02:55:30.884068')
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "user_queues" WHERE "user_queues"."id" = ?  [["id", 7]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'g7vizn337bjm5gzax5iu5a2k'
+  [1m[36mUserQ::UserQueue Load (0.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'g7vizn337bjm5gzax5iu5a2k' ORDER BY "user_queues"."id" ASC LIMIT 1[0m
+  [1m[35mUserQ::UserQueue Load (0.2ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'g7vizn337bjm5gzax5iu5a2k'
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:32.923271')[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["code", "st8idjdh87nvwubs39v6os8l"], ["context", "tickets"], ["created_at", Mon, 23 Dec 2013 02:55:32 UTC +00:00], ["data", "{}"], ["expires_at", Mon, 23 Dec 2013 02:55:42 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 02:55:32 UTC +00:00]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36mUserQ::UserQueue Load (0.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at <= '2013-12-23 02:55:32.930321')[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'st8idjdh87nvwubs39v6os8l'
+  [1m[36mUserQ::UserQueue Load (0.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'st8idjdh87nvwubs39v6os8l' ORDER BY "user_queues"."id" ASC LIMIT 1[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'st8idjdh87nvwubs39v6os8l'
+  [1m[36mUserQ::UserQueue Load (0.4ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:34.950052')
+  [1m[36mUserQ::UserQueue Load (0.6ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:36.637523')
+  [1m[36mUserQ::UserQueue Load (0.5ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:37.318385')
+  [1m[36mUserQ::UserQueue Load (0.5ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:38.004889')
+  [1m[36mUserQ::UserQueue Load (0.5ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:38.573152')
+  [1m[36mUserQ::UserQueue Load (0.5ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:39.181921')
+  [1m[36mUserQ::UserQueue Load (0.4ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:39.782285')
+  [1m[36mUserQ::UserQueue Load (0.3ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:40.324317')
+  [1m[36mUserQ::UserQueue Load (0.5ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:41.100632')
+  [1m[36mUserQ::UserQueue Load (0.4ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:46.229250')
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:48.522843')[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["code", "8xkmx90mcb45aagsm5dczlq"], ["context", "tickets"], ["created_at", Mon, 23 Dec 2013 02:55:48 UTC +00:00], ["data", "{}"], ["expires_at", Mon, 23 Dec 2013 02:55:58 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 02:55:48 UTC +00:00]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36mUserQ::UserQueue Load (0.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at <= '2013-12-23 02:55:48.530696')[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "user_queues" WHERE "user_queues"."id" = ?[0m  [["id", 8]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "user_queues" WHERE "user_queues"."id" = ?  [["id", 9]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = '8xkmx90mcb45aagsm5dczlq'
+  [1m[36mUserQ::UserQueue Load (0.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = '8xkmx90mcb45aagsm5dczlq' ORDER BY "user_queues"."id" ASC LIMIT 1[0m
+  [1m[35mUserQ::UserQueue Load (0.2ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = '8xkmx90mcb45aagsm5dczlq'
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:50.337657')[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["code", "391dadvsq60pwuiuvodoq6b5"], ["context", "tickets"], ["created_at", Mon, 23 Dec 2013 02:55:50 UTC +00:00], ["data", "{}"], ["expires_at", Mon, 23 Dec 2013 02:56:00 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 02:55:50 UTC +00:00]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36mUserQ::UserQueue Load (0.3ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at <= '2013-12-23 02:55:50.343914')[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = '391dadvsq60pwuiuvodoq6b5'
+  [1m[36mUserQ::UserQueue Load (0.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = '391dadvsq60pwuiuvodoq6b5' ORDER BY "user_queues"."id" ASC LIMIT 1[0m
+  [1m[35mUserQ::UserQueue Load (0.2ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = '391dadvsq60pwuiuvodoq6b5'
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:51.737788')[0m
+  [1m[35mUserQ::UserQueue Load (0.5ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:54.405333')[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:55.677084')[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:57.389638')[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:58.204685')[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:55:59.132985')[0m
+  [1m[35mUserQ::UserQueue Load (0.4ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:56:00.315797')[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:56:26.761769')
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["code", "4l2omsdbmlfjm358q3iyz8to"], ["context", "tickets"], ["created_at", Mon, 23 Dec 2013 02:56:26 UTC +00:00], ["data", "{}"], ["expires_at", Mon, 23 Dec 2013 02:59:26 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 02:56:26 UTC +00:00]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mUserQ::UserQueue Load (0.3ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at <= '2013-12-23 02:56:26.770761')
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "user_queues" WHERE "user_queues"."id" = ?  [["id", 10]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "user_queues" WHERE "user_queues"."id" = ?[0m  [["id", 11]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = '4l2omsdbmlfjm358q3iyz8to'[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = '4l2omsdbmlfjm358q3iyz8to' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = '4l2omsdbmlfjm358q3iyz8to'[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:57:48.844907')[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (15.0ms)[0m  [1mINSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["code", "dzqgt2fceg64afikf9idvxry"], ["context", "tickets"], ["created_at", Mon, 23 Dec 2013 02:57:48 UTC +00:00], ["data", "{}"], ["expires_at", Mon, 23 Dec 2013 03:00:48 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 02:57:48 UTC +00:00]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36mUserQ::UserQueue Load (0.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at <= '2013-12-23 02:57:48.883297')[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'dzqgt2fceg64afikf9idvxry'
+  [1m[36mUserQ::UserQueue Load (0.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'dzqgt2fceg64afikf9idvxry' ORDER BY "user_queues"."id" ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:57:53.270143')
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:57:55.319304')[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:57:58.079082')
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:57:59.127123')[0m
+  [1m[35mUserQ::UserQueue Load (0.2ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  DELETE FROM "user_queues" WHERE "user_queues"."id" = ?  [["id", 12]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "user_queues" WHERE "user_queues"."id" = ?[0m  [["id", 13]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at > '2013-12-23 02:59:15.629060')[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["code", "v0yz45sayien8jkydnxzxue2"], ["context", "tickets"], ["created_at", Mon, 23 Dec 2013 02:59:15 UTC +00:00], ["data", "{}"], ["expires_at", Mon, 23 Dec 2013 03:02:15 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 02:59:15 UTC +00:00]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36mUserQ::UserQueue Load (0.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'tickets' AND (expires_at <= '2013-12-23 02:59:15.637961')[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2'
+  [1m[36mUserQ::UserQueue Load (0.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2' ORDER BY "user_queues"."id" ASC LIMIT 1[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2'[0m
+  [1m[35mUserQ::UserQueue Load (0.2ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2e'[0m
+  [1m[35mUserQ::UserQueue Load (0.2ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2e' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2e'[0m
+  [1m[35mUserQ::UserQueue Load (0.2ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2e' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2e'[0m
+  [1m[35mUserQ::UserQueue Load (0.2ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2e' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2eeqwrq'[0m
+  [1m[35mUserQ::UserQueue Load (0.3ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2eeqwrq' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2eeqwrq'[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2eeqwrq'[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2eeqwrq'[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2'
+  [1m[36mUserQ::UserQueue Load (0.3ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2' ORDER BY "user_queues"."id" ASC LIMIT 1[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2'[0m
+  [1m[35mUserQ::UserQueue Load (0.2ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2'[0m
+  [1m[35mUserQ::UserQueue Load (0.2ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.6ms)[0m  UPDATE "user_queues" SET "expires_at" = ?, "updated_at" = ? WHERE "user_queues"."id" = 14  [["expires_at", Mon, 23 Dec 2013 03:05:04 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 03:04:54 UTC +00:00]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2'[0m
+  [1m[35mUserQ::UserQueue Load (0.2ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.8ms)[0m  UPDATE "user_queues" SET "expires_at" = ?, "updated_at" = ? WHERE "user_queues"."id" = 14  [["expires_at", Mon, 23 Dec 2013 03:05:23 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 03:05:13 UTC +00:00]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "user_queues" SET "expires_at" = ?, "updated_at" = ? WHERE "user_queues"."id" = 14[0m  [["expires_at", Mon, 23 Dec 2013 03:05:33 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 03:05:16 UTC +00:00]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2'[0m
+  [1m[35mUserQ::UserQueue Load (0.2ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.5ms)[0m  UPDATE "user_queues" SET "expires_at" = ?, "updated_at" = ? WHERE "user_queues"."id" = 14  [["expires_at", Mon, 23 Dec 2013 03:06:15 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 03:06:05 UTC +00:00]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "user_queues" SET "expires_at" = ?, "updated_at" = ? WHERE "user_queues"."id" = 14[0m  [["expires_at", Mon, 23 Dec 2013 03:06:29 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 03:06:10 UTC +00:00]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "user_queues" SET "expires_at" = ?, "updated_at" = ? WHERE "user_queues"."id" = 14  [["expires_at", Mon, 23 Dec 2013 03:06:55 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 03:06:12 UTC +00:00]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "user_queues" SET "expires_at" = ?, "updated_at" = ? WHERE "user_queues"."id" = 14[0m  [["expires_at", Mon, 23 Dec 2013 03:07:46 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 03:06:13 UTC +00:00]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "user_queues" SET "expires_at" = ?, "updated_at" = ? WHERE "user_queues"."id" = 14  [["expires_at", Mon, 23 Dec 2013 03:07:56 UTC +00:00], ["updated_at", Mon, 23 Dec 2013 03:06:45 UTC +00:00]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2'[0m
+  [1m[35mUserQ::UserQueue Load (0.2ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2'[0m
+  [1m[35mUserQ::UserQueue Load (0.2ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2'[0m
+  [1m[35mUserQ::UserQueue Load (0.2ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'v0yz45sayien8jkydnxzxue2' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36mUserQ::UserQueue Load (2.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues"[0m
+  [1m[35mUserQ::UserQueue Load (0.3ms)[0m  SELECT "user_queues".* FROM "user_queues"
