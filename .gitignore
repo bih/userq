@@ -15,6 +15,8 @@
 /log/*.log
 /tmp
 
+# No .gem files
+/*.gem
 
 # Ignore dummy Rails-related stuff
 /test/dummy/db/*.sqlite3
