@@ -2,6 +2,10 @@
 
 UserQ allows you to **very quickly** integrate awesome user-based queues into your Rails application. Many large ticketing websites such as [Ticketmaster](http://www.ticketmaster.com) use queues as a means of user experience.
 
+[![Build Status](https://travis-ci.org/studenthack/userq.png?branch=master)](https://travis-ci.org/studenthack/userq)
+[![Dependency Status](https://gemnasium.com/studenthack/userq.png)](https://gemnasium.com/studenthack/userq)
+![Gen Version](https://d25lcipzij17d.cloudfront.net/badge.png?title=gem&type=3c&v=0.0.1)
+
 ![Screenshot](http://i.imgur.com/uqYjMyF.gif)
 
 ### Example code
