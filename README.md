@@ -4,7 +4,7 @@ UserQ allows you to **very quickly** integrate awesome user-based queues into yo
 
 [![Build Status](https://travis-ci.org/studenthack/userq.png?branch=master)](https://travis-ci.org/studenthack/userq)
 [![Dependency Status](https://gemnasium.com/studenthack/userq.png)](https://gemnasium.com/studenthack/userq)
-![Gen Version](https://d25lcipzij17d.cloudfront.net/badge.png?title=gem&type=3c&v=0.0.1)
+![Gen Version](https://d25lcipzij17d.cloudfront.net/badge.png?title=gem&type=3c&v=0.0.2)
 
 ![Screenshot](http://i.imgur.com/uqYjMyF.gif)
 
@@ -47,7 +47,7 @@ You're all setup!
 
 
 ### UserQ Documentation
-See the [full documentation on the Wiki](/studenthack/userq/wiki/Documentation) to see what you can do with UserQ.
+See the [full documentation on the Wiki](https://github.com/studenthack/userq/wiki/Documentation) to see what you can do with UserQ.
 
 
 ### Uninstall UserQ
