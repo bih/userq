@@ -13,9 +13,8 @@ services:
 env:
   - RAILS_ENV=test
 
-before_script:
+script:
   - cd test/dummy
   - rails generate userq:install
-
-script:
+  - cd ./../../
   - rake test
