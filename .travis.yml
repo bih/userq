@@ -6,6 +6,10 @@ rvm:
   - "2.0.0"
   - jruby-19mode
 
+gemfile:
+  - Gemfile
+  - test/Gemfile.test
+
 services:
   - sqlite3
 
