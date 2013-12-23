@@ -47,7 +47,7 @@ You're all setup!
 
 
 ### UserQ Documentation
-See the [full documentation on the Wiki](https://github.com/studenthack/userq/wiki/Documentation) to see what you can do with UserQ.
+See the [full documentation on the Wiki](https://github.com/studenthack/userq/wiki/Documentation#getting-started) to see what you can do with UserQ.
 
 
 ### Roadmap
