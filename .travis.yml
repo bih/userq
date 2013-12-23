@@ -15,4 +15,3 @@ env:
 script:
   - rails generate userq:install
   - rake test
-
