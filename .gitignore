@@ -15,7 +15,7 @@
 /log/*.log
 /tmp
 
-# No .gem files
+# No .gem files in root
 /*.gem
 
 # Ignore dummy Rails-related stuff

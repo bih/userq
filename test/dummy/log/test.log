@@ -1896,3 +1896,60 @@ UserqTest: test_should_not_allow_more_than_5_requests_with_2_already_taken
   [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = '3yishr5ujb71fb2sszbb80fd' ORDER BY "user_queues"."id" ASC LIMIT 1[0m
   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-23 16:01:24.834437')
   [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------
+UserqTest: test_average_wait_time_should_be_rightly_calculated
+--------------------------------------------------------------
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+UserqTest: test_if_modules_are_available
+----------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------
+UserqTest: test_migration_should_exist
+--------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------------------------------
+UserqTest: test_queue_should_be_closed_and_then_re-opened_after_time_expires
+----------------------------------------------------------------------------
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'[0m
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+UserqTest: test_should_NOT_be_able_to_access_existing_entry_under_different_context
+-----------------------------------------------------------------------------------
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------------------------------
+UserqTest: test_should_be_able_to_access_existing_entry_under_same_context
+--------------------------------------------------------------------------
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'[0m
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------------------------
+UserqTest: test_should_be_able_to_create_instance_of_a_queue
+------------------------------------------------------------
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+UserqTest: test_should_not_allow_more_than_5_requests
+-----------------------------------------------------
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------------------------------
+UserqTest: test_should_not_allow_more_than_5_requests_with_2_already_taken
+--------------------------------------------------------------------------
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'[0m
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[35m (0.1ms)[0m  rollback transaction
