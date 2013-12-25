@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    userq (0.0.2)
+    userq (0.0.3)
       json
       rails (~> 4.0.0)
 

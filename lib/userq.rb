@@ -146,7 +146,7 @@ module UserQ
     end
 
     def data
-      entry.data || Hash.new
+      JSON.parse(entry.data) || Hash.new
     end
   end
 

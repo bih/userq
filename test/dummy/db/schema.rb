@@ -11,6 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 1387736448) do
+ActiveRecord::Schema.define(version: 1387972460) do
+
+  create_table "user_queues", force: true do |t|
+    t.string   "code"
+    t.datetime "expires_at"
+    t.text     "data"
+    t.string   "context"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

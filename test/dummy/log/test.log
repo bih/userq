@@ -1953,3 +1953,448 @@ UserqTest: test_should_not_allow_more_than_5_requests_with_2_already_taken
   [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'[0m
 SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
   [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------
+UserqTest: test_average_wait_time_should_be_rightly_calculated
+--------------------------------------------------------------
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+UserqTest: test_if_modules_are_available
+----------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UserqTest: test_insert_and_collect_custom_data
+----------------------------------------------
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'[0m
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+UserqTest: test_migration_should_exist
+--------------------------------------
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------
+UserqTest: test_queue_should_be_closed_and_then_re-opened_after_time_expires
+----------------------------------------------------------------------------
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------------------------------------------
+UserqTest: test_should_NOT_be_able_to_access_existing_entry_under_different_context
+-----------------------------------------------------------------------------------
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'[0m
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------
+UserqTest: test_should_be_able_to_access_existing_entry_under_same_context
+--------------------------------------------------------------------------
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------------
+UserqTest: test_should_be_able_to_create_instance_of_a_queue
+------------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------------
+UserqTest: test_should_not_allow_more_than_5_requests
+-----------------------------------------------------
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'[0m
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------
+UserqTest: test_should_not_allow_more_than_5_requests_with_2_already_taken
+--------------------------------------------------------------------------
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------
+UserqTest: test_average_wait_time_should_be_rightly_calculated
+--------------------------------------------------------------
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+UserqTest: test_if_modules_are_available
+----------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------
+UserqTest: test_insert_and_collect_custom_data
+----------------------------------------------
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'[0m
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+UserqTest: test_migration_should_exist
+--------------------------------------
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------
+UserqTest: test_queue_should_be_closed_and_then_re-opened_after_time_expires
+----------------------------------------------------------------------------
+  [1m[35mUserQ::UserQueue Load (0.2ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------------------------------------------
+UserqTest: test_should_NOT_be_able_to_access_existing_entry_under_different_context
+-----------------------------------------------------------------------------------
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'[0m
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------
+UserqTest: test_should_be_able_to_access_existing_entry_under_same_context
+--------------------------------------------------------------------------
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------------------
+UserqTest: test_should_be_able_to_create_instance_of_a_queue
+------------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------------
+UserqTest: test_should_not_allow_more_than_5_requests
+-----------------------------------------------------
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'[0m
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------
+UserqTest: test_should_not_allow_more_than_5_requests_with_2_already_taken
+--------------------------------------------------------------------------
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------
+UserqTest: test_average_wait_time_should_be_rightly_calculated
+--------------------------------------------------------------
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+UserqTest: test_if_modules_are_available
+----------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------
+UserqTest: test_insert_and_collect_custom_data
+----------------------------------------------
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'[0m
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+UserqTest: test_migration_should_exist
+--------------------------------------
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------
+UserqTest: test_queue_should_be_closed_and_then_re-opened_after_time_expires
+----------------------------------------------------------------------------
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------------------------------------------
+UserqTest: test_should_NOT_be_able_to_access_existing_entry_under_different_context
+-----------------------------------------------------------------------------------
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'[0m
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------
+UserqTest: test_should_be_able_to_access_existing_entry_under_same_context
+--------------------------------------------------------------------------
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------------
+UserqTest: test_should_be_able_to_create_instance_of_a_queue
+------------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------------
+UserqTest: test_should_not_allow_more_than_5_requests
+-----------------------------------------------------
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'[0m
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------
+UserqTest: test_should_not_allow_more_than_5_requests_with_2_already_taken
+--------------------------------------------------------------------------
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'
+SQLite3::SQLException: no such table: user_queues: SELECT "user_queues".* FROM "user_queues"  WHERE "user_queues"."context" = 'test'
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "user_queues" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "code" varchar(255), "expires_at" datetime, "data" text, "context" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1387972460')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------
+UserqTest: test_average_wait_time_should_be_rightly_calculated
+--------------------------------------------------------------
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.416774')[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (4.6ms)[0m  [1mINSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["code", "fi19epvxf2arauctscets0dk"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{}"], ["expires_at", Wed, 25 Dec 2013 11:57:34 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.456901')[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'fi19epvxf2arauctscets0dk'
+  [1m[36mUserQ::UserQueue Load (0.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'fi19epvxf2arauctscets0dk' ORDER BY "user_queues"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.461260')
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["code", "rgegl2egj87wwe3ud1tn01de"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{}"], ["expires_at", Wed, 25 Dec 2013 11:57:34 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.466012')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'rgegl2egj87wwe3ud1tn01de'[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'rgegl2egj87wwe3ud1tn01de' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.467656')[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["code", "f5gtagqij01an73d0qessz5t"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{}"], ["expires_at", Wed, 25 Dec 2013 11:57:34 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.469394')[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'f5gtagqij01an73d0qessz5t'
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'f5gtagqij01an73d0qessz5t' ORDER BY "user_queues"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.470542')
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["code", "nnncqtu1d1c18n7foqpei4tv"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{}"], ["expires_at", Wed, 25 Dec 2013 11:57:34 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.472185')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'nnncqtu1d1c18n7foqpei4tv'[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'nnncqtu1d1c18n7foqpei4tv' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.473332')[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["code", "ux3q1pid7i07slw44sp2tft0"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{}"], ["expires_at", Wed, 25 Dec 2013 11:57:34 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.475038')[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'ux3q1pid7i07slw44sp2tft0'
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'ux3q1pid7i07slw44sp2tft0' ORDER BY "user_queues"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.476184')
+  [1m[36mUserQ::UserQueue Load (0.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' ORDER BY "user_queues"."expires_at" ASC LIMIT 1[0m
+  [1m[35mUserQ::UserQueue Load (0.2ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "user_queues" WHERE "user_queues"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "user_queues" WHERE "user_queues"."id" = ?  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "user_queues" WHERE "user_queues"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "user_queues" WHERE "user_queues"."id" = ?  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "user_queues" WHERE "user_queues"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.484860')[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["code", "23jp5wofgll4cf8fpx96qpg3"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{}"], ["expires_at", Wed, 25 Dec 2013 11:59:54 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.487275')[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = '23jp5wofgll4cf8fpx96qpg3'
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = '23jp5wofgll4cf8fpx96qpg3' ORDER BY "user_queues"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.488597')
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["code", "wjztygc6u7d8fp0n2qxneqe"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{}"], ["expires_at", Wed, 25 Dec 2013 11:59:54 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.491015')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'wjztygc6u7d8fp0n2qxneqe'[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'wjztygc6u7d8fp0n2qxneqe' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.492883')[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["code", "ogf3myxbw9m57iyc2vqnx3v3"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{}"], ["expires_at", Wed, 25 Dec 2013 11:59:54 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.495324')[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'ogf3myxbw9m57iyc2vqnx3v3'
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'ogf3myxbw9m57iyc2vqnx3v3' ORDER BY "user_queues"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.496484')
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["code", "2ivfphdc72sx2gf8wioah2w9"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{}"], ["expires_at", Wed, 25 Dec 2013 11:59:54 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.498954')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = '2ivfphdc72sx2gf8wioah2w9'[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = '2ivfphdc72sx2gf8wioah2w9' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.500801')[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["code", "fje0qa0c51w2663n2jrmw07e"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{}"], ["expires_at", Wed, 25 Dec 2013 11:59:54 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.503534')[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'fje0qa0c51w2663n2jrmw07e'
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'fje0qa0c51w2663n2jrmw07e' ORDER BY "user_queues"."id" ASC LIMIT 1[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' ORDER BY "user_queues"."expires_at" ASC LIMIT 1[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' ORDER BY "user_queues"."expires_at" ASC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+UserqTest: test_if_modules_are_available
+----------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UserqTest: test_insert_and_collect_custom_data
+----------------------------------------------
+  [1m[36mUserQ::UserQueue Load (0.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.509992')
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["code", "kaakyecqhdwd635kr5xh8xwn"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{\"name\":\"John Smith\"}"], ["expires_at", Wed, 25 Dec 2013 11:57:29 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.513777')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'kaakyecqhdwd635kr5xh8xwn'[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'kaakyecqhdwd635kr5xh8xwn' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------
+UserqTest: test_migration_should_exist
+--------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------------------
+UserqTest: test_queue_should_be_closed_and_then_re-opened_after_time_expires
+----------------------------------------------------------------------------
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.518141')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.518714')[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["code", "9z3k8taoimh6knvxujeuy03h"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{}"], ["expires_at", Wed, 25 Dec 2013 11:57:29 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.520900')[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = '9z3k8taoimh6knvxujeuy03h'
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = '9z3k8taoimh6knvxujeuy03h' ORDER BY "user_queues"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.522118')
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "user_queues" SET "expires_at" = ?, "updated_at" = ? WHERE "user_queues"."id" = 1  [["expires_at", Wed, 25 Dec 2013 11:57:23 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.526006')
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------------------------------------------
+UserqTest: test_should_NOT_be_able_to_access_existing_entry_under_different_context
+-----------------------------------------------------------------------------------
+  [1m[36mUserQ::UserQueue Load (0.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.528860')
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["code", "m4ok1caxis12dpxnrlqiao5v"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{}"], ["expires_at", Wed, 25 Dec 2013 11:57:29 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.531682')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'm4ok1caxis12dpxnrlqiao5v'[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'm4ok1caxis12dpxnrlqiao5v' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'm4ok1caxis12dpxnrlqiao5v'[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'm4ok1caxis12dpxnrlqiao5v' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------------------------------
+UserqTest: test_should_be_able_to_access_existing_entry_under_same_context
+--------------------------------------------------------------------------
+  [1m[36mUserQ::UserQueue Load (0.2ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.535388')
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["code", "wwrraz9inwntzppli7jzb56"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{}"], ["expires_at", Wed, 25 Dec 2013 11:57:29 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.538449')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'wwrraz9inwntzppli7jzb56'[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'wwrraz9inwntzppli7jzb56' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'wwrraz9inwntzppli7jzb56'[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'wwrraz9inwntzppli7jzb56' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------------
+UserqTest: test_should_be_able_to_create_instance_of_a_queue
+------------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------------
+UserqTest: test_should_not_allow_more_than_5_requests
+-----------------------------------------------------
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.543290')
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["code", "age2z5ug6er9v0qrlf1212nk"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{}"], ["expires_at", Wed, 25 Dec 2013 11:57:29 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.545389')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'age2z5ug6er9v0qrlf1212nk'[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'age2z5ug6er9v0qrlf1212nk' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.546573')[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["code", "ogomvigoboqj0s5cyldbe7qv"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{}"], ["expires_at", Wed, 25 Dec 2013 11:57:29 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.548693')[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'ogomvigoboqj0s5cyldbe7qv'
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'ogomvigoboqj0s5cyldbe7qv' ORDER BY "user_queues"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.549899')
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["code", "1154f2qgua3hogcr7z8fljvv"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{}"], ["expires_at", Wed, 25 Dec 2013 11:57:29 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.551952')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = '1154f2qgua3hogcr7z8fljvv'[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = '1154f2qgua3hogcr7z8fljvv' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.553812')[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["code", "c5y4ly2f1fputgvwrk7ilwt2"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{}"], ["expires_at", Wed, 25 Dec 2013 11:57:29 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.555934')[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'c5y4ly2f1fputgvwrk7ilwt2'
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'c5y4ly2f1fputgvwrk7ilwt2' ORDER BY "user_queues"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.557105')
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["code", "77g6fyb96u66iwd9pry1fihg"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{}"], ["expires_at", Wed, 25 Dec 2013 11:57:29 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.558703')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = '77g6fyb96u66iwd9pry1fihg'[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = '77g6fyb96u66iwd9pry1fihg' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.559857')[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------
+UserqTest: test_should_not_allow_more_than_5_requests_with_2_already_taken
+--------------------------------------------------------------------------
+  [1m[35mUserQ::UserQueue Load (0.2ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.562081')[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["code", "dfzyllmjnxk8bsz4ycujdg0d"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{}"], ["expires_at", Wed, 25 Dec 2013 11:57:29 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.565113')[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'dfzyllmjnxk8bsz4ycujdg0d'
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'dfzyllmjnxk8bsz4ycujdg0d' ORDER BY "user_queues"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.566983')
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["code", "b41oelwi0vse1i5u9ndk5nru"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{}"], ["expires_at", Wed, 25 Dec 2013 11:57:29 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.570007')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'b41oelwi0vse1i5u9ndk5nru'[0m
+  [1m[35mUserQ::UserQueue Load (0.1ms)[0m  SELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'b41oelwi0vse1i5u9ndk5nru' ORDER BY "user_queues"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.572027')[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "user_queues" ("code", "context", "created_at", "data", "expires_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["code", "a5h7n1yj1xzkzsbrip4qav71"], ["context", "test"], ["created_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00], ["data", "{}"], ["expires_at", Wed, 25 Dec 2013 11:57:29 UTC +00:00], ["updated_at", Wed, 25 Dec 2013 11:57:24 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at <= '2013-12-25 11:57:24.574770')[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."code" = 'a5h7n1yj1xzkzsbrip4qav71'
+  [1m[36mUserQ::UserQueue Load (0.1ms)[0m  [1mSELECT "user_queues".* FROM "user_queues" WHERE "user_queues"."code" = 'a5h7n1yj1xzkzsbrip4qav71' ORDER BY "user_queues"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "user_queues" WHERE "user_queues"."context" = 'test' AND (expires_at > '2013-12-25 11:57:24.576609')
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m

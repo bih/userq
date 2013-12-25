@@ -85,7 +85,7 @@ class UserqTest < ActiveSupport::TestCase
   test "queue should be closed and then re-opened after time expires" do
     instance = UserQ::Queue.new(context: 'test', capacity: 1, entry_time: 5, auto_clean: true)
     instance.reset
-    assert instance.enter_into_queue?, "Was not able to enter into queue"
+    assert instance.enter_into_queue?, "was not able to enter into queue"
     
     entry = instance.enter
     assert_not instance.enter_into_queue?, "Was able to enter in queue before 1 capacity had expired"
@@ -97,6 +97,17 @@ class UserqTest < ActiveSupport::TestCase
     assert entry.expired?, "Entry not considered expired"
 
     assert instance.enter_into_queue?, "Was not able to re-enter into queue"
+  end
+
+  test "insert and collect custom data" do
+    instance = UserQ::Queue.new(context: 'test', capacity: 1, entry_time: 5, auto_clean: true)
+    instance.reset
+
+    # Fake name
+    name = "John Smith"
+
+    entry = instance.enter(name: name)
+    assert_equal name, entry.data["name"]
   end
   
 end

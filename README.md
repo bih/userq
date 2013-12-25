@@ -4,7 +4,7 @@ UserQ allows you to **very quickly** integrate awesome user-based queues into yo
 
 [![Build Status](https://travis-ci.org/studenthack/userq.png?branch=master)](https://travis-ci.org/studenthack/userq)
 [![Dependency Status](https://gemnasium.com/studenthack/userq.png)](https://gemnasium.com/studenthack/userq)
-![Gen Version](https://d25lcipzij17d.cloudfront.net/badge.png?title=gem&type=3c&v=0.0.2)
+![Gen Version](https://d25lcipzij17d.cloudfront.net/badge.png?title=gem&type=3c&v=0.0.3)
 
 ![Screenshot](http://i.imgur.com/uqYjMyF.gif)
 
@@ -56,6 +56,7 @@ See the [full documentation on the Wiki](https://github.com/studenthack/userq/wi
 - Assign queue places in a chronological order (first into queue = first entry) instead of randomly
 
 ### Release History
+- 25/12/13: Fixed bug in using custom data (and tests added for it)
 - 23/12/13: The initial version
 
 ### LICENCE
